@@ -11,7 +11,7 @@ public class SuperInitializingFields {
 
     {
         count++;
-        System.out.println("This is a instance block");
+        System.out.println("This is a super instance block");
     }
 
     public SuperInitializingFields() {

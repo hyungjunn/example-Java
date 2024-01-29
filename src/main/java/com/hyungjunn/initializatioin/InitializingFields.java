@@ -15,6 +15,7 @@ public class InitializingFields extends SuperInitializingFields {
     }
 
     public InitializingFields() {
+        count++;
         System.out.println("This is a Constructor");
     }
 
