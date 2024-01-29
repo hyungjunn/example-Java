@@ -9,14 +9,12 @@ class InitializingFieldsTest {
 
     @Test
     void test() {
-        //given
+        //given && when
         new InitializingFields();
         new InitializingFields();
-
-        //when
 
         //then
-        Assertions.assertThat(InitializingFields.count).isEqualTo(3);
+        Assertions.assertThat(InitializingFields.count).isEqualTo(8);
     }
 
 }

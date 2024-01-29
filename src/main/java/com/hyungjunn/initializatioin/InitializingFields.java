@@ -1,8 +1,8 @@
 package com.hyungjunn.initializatioin;
 
-public class InitializingFields {
+public class InitializingFields extends SuperInitializingFields {
 
-    static int count;
+    //static int count;
 
     static {
         count++;
