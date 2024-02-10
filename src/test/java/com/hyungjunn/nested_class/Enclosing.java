@@ -6,11 +6,13 @@ import org.junit.jupiter.api.Test;
 public class Enclosing {
 
     private static int x = 1;
+    private int y;
 
     public static class StaticNested {
 
         private int run() {
             // method implementation
+            // y = 4; // static-nested class don't access non-static "y"
             return x + 1;
         }
 
