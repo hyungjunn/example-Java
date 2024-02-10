@@ -1,4 +1,4 @@
-package com.hyungjunn.nested_class;
+package com.hyungjunn.nestedclass;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
