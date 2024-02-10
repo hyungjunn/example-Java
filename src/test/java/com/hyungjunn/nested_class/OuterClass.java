@@ -21,4 +21,11 @@ public class OuterClass {
         Assertions.assertThat(innerClass.run()).isEqualTo(2);
     }
 
+    @Test
+    void test_instantiation() {
+        OuterClass outerClass = new OuterClass();
+        InnerClass innerClass = outerClass.new InnerClass();
+        Assertions.assertThat(innerClass.run()).isEqualTo(2);
+    }
+
 }
