@@ -8,8 +8,11 @@ public class Book {
         this.title = title;
     }
 
-    private String description() {
+    public String description() {
         return "Title: " + title;
     }
 
+    public String getTitle() {
+        return title;
+    }
 }
