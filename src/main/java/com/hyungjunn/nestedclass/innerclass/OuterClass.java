@@ -4,7 +4,7 @@ public class OuterClass {
 
     // innerclass
     class InnerClass {
-        private static final String cry = "Miaow~~~";
+        private static final String cry = "Miaow~~~ in inner class";
 
         private void crying() {
             System.out.println(cry);
@@ -13,10 +13,11 @@ public class OuterClass {
 
     void behave() {
 
-        String cry = "Miaow~~~";
+        String cry = "miaow~~~ in localclass enclosing class";
 
         // localclass
         class Cat {
+            private static final String cry = "MIAOW~~~ in localclass";
             private void crying() {
                 System.out.println(cry);
             }
