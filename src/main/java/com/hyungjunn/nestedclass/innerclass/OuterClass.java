@@ -2,6 +2,10 @@ package com.hyungjunn.nestedclass.innerclass;
 
 public class OuterClass {
 
+    interface Animal {
+        public void crying();
+    }
+
     // innerclass
     class InnerClass {
         private static final String cry = "Miaow~~~ in inner class";
@@ -16,15 +20,26 @@ public class OuterClass {
         String cry = "miaow~~~ in localclass enclosing class";
 
         // localclass
-        class Cat {
+        class Cat implements Animal{
             private static final String cry = "MIAOW~~~ in localclass";
-            private void crying() {
+            @Override
+            public void crying() {
                 System.out.println(cry);
             }
         }
         Cat cat = new Cat();
         cat.crying();
 
+        Animal dog = new Animal() {
+
+            private static final String cry = "Baw Baw!!! in Anonymousclass";
+
+            @Override
+            public void crying() {
+                System.out.println(cry);
+            }
+        };
+        dog.crying();
 
     }
 
