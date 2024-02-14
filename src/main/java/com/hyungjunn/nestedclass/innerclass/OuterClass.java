@@ -64,7 +64,7 @@ public class OuterClass {
         OuterClass outerClass = new OuterClass();
         OuterClass.InnerClass cat = outerClass.new InnerClass();
         cat.crying();
-        outerClass.behave(); // 보일러플레이트 코드에서 메서드가 한개보다 많아질경우에 명확성이 떨어지게 된다
+        outerClass.behave(); // 보일러플레이트 코드에서 메서드가 한개보다 많아질경우에 명확성이 떨어지게 된다1
     }
 
 
